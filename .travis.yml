@@ -10,5 +10,10 @@ deploy:
   file: helloWorld.sh
   skip_cleanup: true
   prerelease: true
+  prerelease_on_branch:
+      - prerelease
+  edge:
+    source: mariogrip/dpl
+    branch: prerelease_on_branch
   on:
     tags: true
